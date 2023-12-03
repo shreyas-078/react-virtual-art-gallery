@@ -12,6 +12,9 @@ export default {
           "50%": { transform: "translateX(50%)" },
         },
       },
+      boxShadow: {
+        "border-box-sm": "5px 5px 5px 5px #90b7d7",
+      },
     },
   },
   plugins: [],

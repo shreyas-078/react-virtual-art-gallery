@@ -9,8 +9,10 @@ import "slick-carousel/slick/slick-theme.css";
 
 // Data Import
 import { artworkDetails } from "../assets/data/artworkDetails";
+import { useState } from "react";
 
 export default function ArtworkCarousel() {
+  const [index, setIndex] = useState(0);
   const settings = {
     infinite: true,
     speed: 500,
@@ -18,9 +20,14 @@ export default function ArtworkCarousel() {
     slidesToScroll: 1,
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
+    centerPadding: "60px",
+    beforeChange: (oldIndex, newIndex) => {
+      setIndex(newIndex);
+    },
   };
   return (
-    <section className="my-8 mx-10">
+    <section className="my-6 mx-10">
+      <h2 className="text-4xl text-center my-4 font-cormorant">Our ArtWork</h2>
       <Slider {...settings}>
         {artworkDetails.map((artwork) => (
           <img
@@ -31,8 +38,12 @@ export default function ArtworkCarousel() {
           />
         ))}
       </Slider>
-      <p className="text-center mt-4 font-cormorant text-xl font-bold">Title</p>
-      <p className="text-center font-cormorant text-lg">Description</p>
+      <p className="text-center mt-4 font-cormorant text-xl font-bold">
+        {artworkDetails[index].Name}
+      </p>
+      <p className="text-center font-cormorant text-lg">
+        {artworkDetails[index].Description}
+      </p>
     </section>
   );
 }

@@ -6,28 +6,28 @@ import galaxyImage from "../images/Galaxy.png";
 
 const artworkDetails = [
   {
-    Name: "First Painting",
-    Description: "Painted by the great Boy of the Boys",
+    Name: `"First Painting"`,
+    Description: "~Painted by the great Boy of the Boys~",
     imageSource: modernLifeImage,
   },
   {
-    Name: "Second Painting",
-    Description: "Painted by the great Girl of the Girls",
+    Name: `"Second Painting"`,
+    Description: "~Painted by the great Girl of the Girls~",
     imageSource: riceFieldsImage,
   },
   {
-    Name: "Third Painting",
-    Description: "Painted by the great Man of the Men",
+    Name: `"Third Painting"`,
+    Description: "~Painted by the great Man of the Men~",
     imageSource: abstractPaintingImage,
   },
   {
-    Name: "Fourth Painting",
-    Description: "Painted by the great Woman of the Women",
+    Name: `"Fourth Painting"`,
+    Description: "~Painted by the great Woman of the Women~",
     imageSource: wavesImage,
   },
   {
-    Name: "Fifth Painting",
-    Description: "Painted by the great God of the Gods",
+    Name: `"Fifth Painting"`,
+    Description: "~Painted by the great God of the Gods~",
     imageSource: galaxyImage,
   },
 ];
