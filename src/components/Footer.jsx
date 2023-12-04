@@ -4,12 +4,8 @@ export default function Footer({ ...props }) {
   return (
     <footer {...props}>
       <Header />
-      <p className="font-cormorant text-l px-4">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum eaque
-        consequatur nostrum beatae. Similique, quae consectetur ipsa incidunt,
-        cumque neque quod, officia vitae quaerat quasi iste laboriosam. Nemo,
-        accusamus minima? Lorem ipsum dolor sit amet consectetur, adipisicing
-        elit.
+      <p className="font-cormorant text-xl px-4 text-center">
+        React Art Gallery © 2023. All rights reserved.
       </p>
     </footer>
   );
