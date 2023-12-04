@@ -1,6 +1,6 @@
 export default function About() {
   return (
-    <section>
+    <section className="px-8">
       <h1 className="text-4xl font-cormorant text-center my-4">About Us</h1>
       <p className="text-center font-cormorant text-xl my-2">
         Founded with a passion for promoting creativity and fostering artistic
@@ -9,7 +9,25 @@ export default function About() {
         platform for artists to share their stories and for art enthusiasts to
         experience the transformative power of visual expression.
       </p>
-      <p className="text-center font-cormorant text-xl my-2">
+
+      <p className="text-center font-cormorant text-xl mt-2 mb-4">
+        Plan your visit to the React Art Gallery and witness the dynamic fusion
+        of art and technology. Whether you&rsquo;re a seasoned art enthusiast or
+        a curious newcomer, our gallery offers a welcoming space to explore,
+        appreciate, and connect with the ever-evolving world of React art.
+        <br />
+        <br />
+        <span className="font-bold">
+          Gallery Hours:
+          <br />
+        </span>
+        Monday to Friday: 10 AM - 6 PM <br />
+        Saturday and Sunday: 12 PM - 5 PM <br />
+        Admission is free, and creativity knows no bounds at the React Art
+        Gallery. We look forward to sharing the magic of React-based art with
+        you.
+      </p>
+      <p className="text-center font-cormorant text-xl my-6">
         Have questions, comments, or collaboration inquiries? Reach out to
         us—we&apos;d love to hear from you!
       </p>

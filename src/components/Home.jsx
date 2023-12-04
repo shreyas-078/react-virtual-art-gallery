@@ -39,6 +39,14 @@ export default function Home({ onExplore }) {
           boundless possibilities of artistic expression and join us in
           celebrating the beauty of imagination.
         </p>
+        <p>
+          <p className="text-center font-cormorant text-xl my-2">
+            Stay tuned for our upcoming events and exhibitions, where we bring
+            together the most talented and visionary artists working with React.
+            Engage with the artists, participate in interactive installations,
+            and witness the evolution of art in real-time.
+          </p>
+        </p>
         <p className="font-cormorant text-xl text-center">
           Ready to embark on a visual adventure? Click the button below to
           explore our virtual art gallery, where each click opens a door to a

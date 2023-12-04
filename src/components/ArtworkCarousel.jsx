@@ -20,21 +20,23 @@ export default function ArtworkCarousel() {
     slidesToScroll: 1,
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
-    centerPadding: "60px",
+    centerMode: true,
+    centerPadding: "0px",
     beforeChange: (oldIndex, newIndex) => {
       setIndex(newIndex);
     },
   };
+
   return (
-    <section className="my-6 mx-10">
-      <h2 className="text-4xl text-center my-4 font-cormorant">Our ArtWork</h2>
+    <section className="my-6 mx-48">
+      <h2 className="text-4xl text-center my-4 font-cormorant">Our Artwork</h2>
       <Slider {...settings}>
-        {artworkDetails.map((artwork) => (
+        {artworkDetails.map((artwork, artIndex) => (
           <img
-            key={artwork.Name}
             src={artwork.imageSource}
             alt={artwork.Description}
-            className="w-[480px] h-[480px] border-[2px] border-stone-600 rounded-md"
+            key={artwork.Name}
+            className={artIndex === index ? "active" : "inactive"}
           />
         ))}
       </Slider>
@@ -43,6 +45,9 @@ export default function ArtworkCarousel() {
       </p>
       <p className="text-center font-cormorant text-lg">
         {artworkDetails[index].Description}
+      </p>
+      <p className="text-center font-cormorant text-lg">
+        You can find More Artwork At the React Art Gallery!
       </p>
     </section>
   );

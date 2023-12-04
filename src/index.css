@@ -4,7 +4,22 @@
 @tailwind components;
 @tailwind utilities;
 
-.slick-slide>div {
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
+
+.active {
+  height: 480px;
+  width: 480px;
+  object-fit: contain;
+  transition: all 0.3s ease-in-out;
+}
+
+.inactive {
+  height: 400px;
+  width: 100px;
+  object-fit: contain;
+  transition: all 0.3s ease-in-out;
+  margin-top: 2.5rem;
+}
+
+.slick-track {
+  height: 520px;
 }
